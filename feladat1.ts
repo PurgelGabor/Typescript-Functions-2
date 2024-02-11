@@ -27,3 +27,25 @@ interface Auto {
 
 console.log(negativE([1,0,3,6,-8]));
 console.log(korKerTer(6));
+
+function minAuto(auto:Auto[]):Auto{
+
+    let minCCM = auto[0];
+
+    for(let i: number = 0; i < auto.length; i++){
+        if(minCCM > auto[i]){
+            minCCM = auto[i];
+        }
+    }
+    return minCCM;
+}
+
+function benzinesDB(auto:Auto[]):number{
+    let benzinesDarabSzam = 0;
+    for(let i: number = 0; i < auto.length; i++){
+        if(auto[i].BenzinesE == true){
+            benzinesDarabSzam++;
+        }
+    }
+    return benzinesDarabSzam;
+}
