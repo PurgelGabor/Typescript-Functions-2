@@ -25,9 +25,6 @@ interface Auto {
     BenzinesE: boolean
 }
 
-console.log(negativE([1,0,3,6,-8]));
-console.log(korKerTer(6));
-
 function minAuto(auto:Auto[]):Auto{
 
     let minCCM = auto[0];
